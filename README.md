@@ -1,4 +1,4 @@
-# Desktop Phone Interface
+# phoneinterface 
 For a user interface couse, I designed and built the user interface for a desktop phone. The project was completed in 2017 and was my first experience focusing on user interface design.
 
 Erin Barcaskey

@@ -1,0 +1,243 @@
+/* Author: Erin Barcaskey
+   Date: April 21, 2017
+   
+   User Interface Design Desktop Telephone Project
+*/
+
+header, nav, main, footer { display: block; }
+* { box-sizing: border-box; 
+	font-family: Arial;
+}
+
+/* Icon Bar for every page */
+.icon-bar {
+    width: 100%;
+    background-color: #c1c1c2; 
+    overflow: auto; 
+	max-width: 325px;
+}
+.icon-bar a {
+    float: left;
+    text-align: center;
+    width: 20%; 
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+.icon-bar a:hover {
+    background-color: #e0e0e0;
+}
+.iconbarimg { height: 20px;
+				width: 20px; 				
+}
+
+/* call screen info */
+#callerid { max-width: 325px;
+			text-align: center; }
+#calltime { max-width: 325px;
+			text-align: center; }
+.callimages { height: 100px;
+			  width: 100px; 
+			  }
+.calldiv { margin-left: 60px; }
+.calltext { margin-left: 88px; 
+			font-weight: bold;}
+
+/* RECEIVE call screen info */
+.receivediv { margin-left: 60px; }
+#receivetext1 { margin-left: 68px; 
+			font-weight: bold;}
+#receivetext2 { margin-left: 78px; 
+			font-weight: bold;}			
+
+/*class for keypad buttons*/
+.keypad { height: 65px;
+			width: 65px;
+			font-size: 2.75em;
+			border-style: none;	
+			background-color: #e0e0e0;
+			border-radius: 15px;
+			box-shadow: 2px 2px 2px #c1c1c2;
+		}
+.keypad:hover { background-color: #c1c1c2;}
+.keypad a { text-decoration: none; }
+
+/*ID for entire keypad div*/
+#wholekeypad { margin-left: 62.5px; }
+
+/*ID for back and call buttons on dial pad */
+#backandcall { margin-left: 32.5px; 
+				font-size: 20px; }
+#backandcall button.keypadbottom { border-width: 1px;
+								   border-color: #c1c1c2;
+								   border-radius: 5px;}
+#backandcall button.keypadbottom a	{ text-decoration: none; }
+
+/* mobile number input on dialpad */
+#mobile { width: 325px; 
+		  height: 60px;
+		  border-color: #c1c1c2;
+		  font-size: 30px;
+}
+
+/*VERTICAL MENU FOR MENU, CALLING, TEXTING */
+.menuimg { height: 30px;
+			width: 30px; 
+}
+.vertical-menu {
+    width: 325px; 
+	font-size: 30px;
+}
+.vertical-menu img { margin: 5px 5px 5px 5px; }
+.vertical-menu a {
+    background-color: #e0e0e0; 
+    color: black; 
+    display: block; 
+    padding: 12px; 
+    text-decoration: none; 
+}
+.vertical-menu a:hover {
+    background-color: #c1c1c2; 
+}
+.vertical-menu a.active {
+    background-color: #66b3ff; 
+    color: white;
+}
+/*notification specialty*/
+.vertical-menu a.notif { font-size: 18px;
+						 font-weight: bold;
+}
+/* site map formatting */
+#sitemaplist { list-style-type: none; }
+.leveltwo { text-indent: 20px; }
+.levelthree { text-indent: 40px; }
+.levelfour { text-indent: 60px; }
+
+/* call history code */
+.callhistorybar {
+    width: 100%; 
+    background-color: #c1c1c2; 
+    overflow: auto; 
+	max-width: 325px;
+}
+.callhistorybar a {
+    float: left; 
+    text-align: center; 
+    width: 33%;
+    padding: 12px 0; 
+    transition: all 0.3s ease; 
+    color: black; 
+    font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.callhistorybar a:hover {
+    background-color: #e0e0e0; 
+}
+.callhistoryimg { height: 20px;
+				width: 20px; 
+				
+}
+/* for call history, missed calls, and voicemail - similar to vertical menu*/
+.callhistorymenu { width: 325px; 
+					font-size: 20px;}
+.callhistorymenu a {
+    background-color: #e0e0e0; 
+    color: black; 
+    display: block; 
+    padding: 10px; 
+    text-decoration: none; 
+}
+.callhistorymenu a:hover {
+    background-color: #66b3ff; 
+}
+.callhistorymenu a.active {
+    background-color: #66b3ff; 
+    color: white;
+}
+.missedcall { font-weight: bold; }
+.callhistoryimg2 { height: 25px;
+					width: 25px;}
+
+
+/*SEARCH LIST FOR CONTACTS.HTML */
+#myInput {	width: 325px;
+			font-size: 16px; 
+			padding: 12px 10px 12px 10px;
+			border: 1px solid #ddd; 
+			margin-bottom: 12px;}
+#myContacts {   list-style-type: none;
+				padding: 0;
+				margin: 0;
+				width: 325px; }
+#myContacts li a {
+    border: 1px solid #ddd; 
+    margin-top: -1px; 
+    background-color: #f6f6f6; 
+    padding: 12px; 
+    text-decoration: none; 
+    font-size: 18px; 
+    color: black; 
+    display: block; }
+#myContacts li a.header {
+    background-color: #c1c1c2;
+	font-weight: bold;	
+    cursor: default; }
+#myContacts li a:hover:not(.header) {
+    background-color: #e0e0e0; }
+
+/*new text message form*/
+form { background-color: #e0e0e0; 
+		padding: 10px; 
+		width: 325px;}
+label { float: left; 
+		width: 100px; 
+		clear: left;
+		text-align: right;
+		padding-right: 10px; 
+		margin-top: 10px; }
+input, textarea { margin-top: 10px; 
+					display: block; }
+#mysubmit { margin-left: 70px;
+			width: 80px;
+			height: 30px;
+			display: inline; 
+			background-color: green;
+			outline: none;
+			color: white;
+			font-size: 15px;
+			border-radius: 5px;
+			border: none;
+			font-weight: bold;
+			}
+#mysubmit:hover { background-color: #3e8e41 }
+			
+#myreset {  margin-left: 30px;
+			width: 80px;
+			height: 30px;
+			font-size: 15px;
+			display: inline;
+			border-radius: 5px; 
+			border: none;
+			background-color: white;
+			font-weight: bold;
+			}
+#myreset:hover { background-color: #d55757;
+				 color: white;}
+
+/*contact search bar */
+#contactsearch { width: 325px;
+			font-size: 16px; 
+			padding: 12px 20px 12px 40px;
+			border: 1px solid #ddd; 
+			margin-bottom: 12px;}
+#contactsearchbutton { display: inline; }
+				 
+/* SETTINGS ID */
+#settingslist { font-size: 24px; }
+
+/* help button */
+.helpbuttondiv { max-width: 310px;}
+.helpbutton { display: inline; 
+			  float: right; 
+			  height: 35px;
+			  width: 35px;}

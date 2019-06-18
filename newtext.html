@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>New Text Message</title>
+<meta charset="utf-8">
+<link href="phoneinterface.css" rel="stylesheet"> 
+</head>
+
+<body>
+
+<nav>
+	<!-- icon bar navigation - always on every page -->
+	<div class="icon-bar">
+		<a href="menu.html"><img src="images/home.png" class="iconbarimg" alt="Home"></a>
+		<a href="dialing.html"><img src="images/dialpad.png" class="iconbarimg" alt="Dialpad"></a>
+		<a href="newtext.html"><img src="images/envelope.png" class="iconbarimg" alt="New Text Message"></a>
+		<a href="notifications.html"><img src="images/exclamation.png" class="iconbarimg" alt="Notifications"></a>
+		<a href="#"><img src="images/search.png" class="iconbarimg" alt="Search Bar"></a>
+	</div>
+</nav>
+
+<main>
+	
+<h1>NEW TEXT MESSAGE</h1>
+	
+<form name="newtext" method="post" action="#">
+<label for="textcontact"><strong>CONTACT:</strong></label>
+<input type="text" name="textcontact" id="textcontact" required>
+<textarea name="mymessage" id="mymessage" rows="6"
+cols="36" placeholder="Enter your message here" required></textarea>
+
+<input id="myreset" type="reset" value="RESET">
+<input id="mysubmit" type="submit" value="SEND">
+</form>	
+
+<br>
+
+<div class="vertical-menu">
+	<a href="texting.html" class="active">BACK TO TEXTING</a>
+</div>
+
+</main>
+
+</body>
+</html>
